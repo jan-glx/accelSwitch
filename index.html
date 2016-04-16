@@ -14,6 +14,7 @@
     <![endif]-->
 
     <title>accelSwitch &amp; accelSwitcher by jan-glx</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -59,6 +60,46 @@
         </section>
 
         <aside id="sidebar">
+          
+          <script type="text/javascript">
+    $(document).ready(function () {
+        GetLatestReleaseInfo();
+    });
+
+    function GetLatestReleaseInfo() {
+        $.getJSON("https://api.github.com/repos/ShareX/ShareX/releases/latest").done(function (release) {
+            var asset = release.assets[0];
+            var downloadCount = 0;
+            for (var i = 0; i < release.assets.length; i++) {
+                downloadCount += release.assets[i].download_count;
+            }
+            var oneHour = 60 * 60 * 1000;
+            var oneDay = 24 * oneHour;
+            var dateDiff = new Date() - new Date(asset.updated_at);
+            var timeAgo;
+            if (dateDiff < oneDay)
+            {
+                timeAgo = (dateDiff / oneHour).toFixed(1) + " hours ago";
+            }
+            else
+            {
+                timeAgo = (dateDiff / oneDay).toFixed(1) + " days ago";
+            }
+            var releaseInfo = release.name + " was updated " + timeAgo + " and downloaded " + downloadCount.toLocaleString() + " times.";
+            $("#accelSwitcher.exe").attr("href", asset.browser_download_url);
+            $("#accelSwitch.exe").attr("href", release.assets[1].browser_download_url);
+        });
+    }
+</script>
+
+          <a id="accelSwitcher.exe" href="https://github.com/jan-glx/accelSwitch/releases/latest" class="button">
+            <small>Download</small>
+            accelSwitch.exe
+          </a>
+          <a id="accelSwitch.exe" href="https://github.com/jan-glx/accelSwitch/releases/latest" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
           <a href="https://github.com/jan-glx/accelSwitch/zipball/master" class="button">
             <small>Download</small>
             .zip file
