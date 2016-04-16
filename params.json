@@ -1,0 +1,6 @@
+{
+  "name": "accelSwitch & accelSwitcher",
+  "tagline": "Two tiny tools to turn toggling the mouse acceleration settings every time you are stuck with a touchpad into an easy tasks.",
+  "body": "\r\n## accelSwitcher\r\nA small tool with no user interface that will *automatically* turn off mouse acceleration when a usb mouse is plugged in and turn mouse acceleration on when a usb mouse is removed. \r\n\r\n### Usage:\r\nPut ````accelSwitcher.exe```` into the folder ````shell:startup```` to run it automatically at login or start it manually with a double click once for a session. Ending it is possible via the task manager only.\r\n\r\n***\r\n\r\n## accelSwitch\r\nA small tool to manually toggle mouse acceleration / enhance pointer precision on Windows.\r\n\r\n### Usage:\r\n\r\n- turn on  mouse acceleration:  ````accelSwitch.exe on````     \r\n- turn off  mouse acceleration: ````accelSwitch.exe off````   \r\n- toggle   mouse acceleration: ````accelSwitch.exe```` or ````accelSwitch.exe toggle````\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
