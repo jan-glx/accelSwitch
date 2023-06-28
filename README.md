@@ -16,7 +16,7 @@ A small tool to manually toggle mouse acceleration / enhance pointer precision o
 - toggle   mouse acceleration: ````accelSwitch.exe```` or ````accelSwitch.exe toggle````
 
 ## accelSwitcher
-A small tool with no user interface that will *automatically* turn off mouse acceleration when a usb mouse is plugged in and turn mouse acceleration on when a usb mouse is removed. 
+A small tool with no user interface that will *automatically* turn off mouse acceleration when a usb mouse is plugged in and turn on mouse acceleration when a usb mouse is removed. 
 
 ### Usage:
 Put ````accelSwitcher.exe```` into the folder ````shell:startup```` to run it automatically at login or start it manually with a double click once for a session. Ending it is possible via the task manager only.
