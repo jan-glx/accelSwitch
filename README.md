@@ -5,7 +5,7 @@
 
 Website: [jan-glx.github.io/accelSwitch](http://jan-glx.github.io/accelSwitch)
 
-Two tiny tools to turn toggling the mouse acceleration settings every time you are stuck with a touchpad into an easy tasks.
+Two tiny tools to turn toggling the mouse acceleration settings every time you are stuck with a touchpad into an easy task.
 ## accelSwitch
 A small tool to manually toggle mouse acceleration / enhance pointer precision on Windows.
 
