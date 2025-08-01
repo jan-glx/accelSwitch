@@ -31,7 +31,7 @@ namespace UnitTest
 			Assert::AreEqual(!!before, !pvParam[2]);
 		}
 
-		TEST_METHOD(TestOfOn)
+                TEST_METHOD(TestOffOn)
 		{
 			int pvParam[3];
 
